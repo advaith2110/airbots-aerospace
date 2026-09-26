@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRBOTS Aerospace — Autonomous Drone Robotics for Precision Agriculture</title>
+  <link rel="icon" type="image/png" href="airbot_favicon.png" />
+  <meta name="description" content="AIRBOTS Aerospace delivers DGCA Type-Certified autonomous agricultural drones, intelligent spraying solutions, and precision crop telemetry empowering farmers across India." />
+  <meta name="theme-color" content="#4156AF" />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Notification Ribbon -->
+  <div class="top-banner">
+    <div class="container top-banner-content">
+      <div class="banner-badge">DGCA Certified</div>
+      <p class="banner-text">
+        <strong>Surya Shakti 15L</strong> is officially DGCA Type Certified! Up to 50% Government Subsidy & Easy Agri-Financing Available.
+      </p>
+      <a href="#calculator" class="banner-link">Calculate Your Subsidy & Savings &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="AIRBOTS Aerospace Homepage">
+        <img src="airbot_logo.webp" alt="AIRBOTS AEROSPACE Logo" class="main-logo-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#drone" class="nav-link">Surya Shakti 15L</a></li>
+          <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="#specs" class="nav-link">Specifications</a></li>
+          <li class="nav-item"><a href="#telemetry" class="nav-link">Flight Control</a></li>
+          <li class="nav-item"><a href="#calculator" class="nav-link">ROI Calculator</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="tel:+918097507260" class="btn btn-outline nav-contact-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+91 8097507260</span>
+        </a>
+        <button class="btn btn-primary" onclick="openModal('demo')">Book Field Demo</button>
+
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#drone" onclick="closeDrawer()">Surya Shakti 15L Drone</a></li>
+        <li><a href="#solutions" onclick="closeDrawer()">Agricultural Solutions</a></li>
+        <li><a href="#specs" onclick="closeDrawer()">Technical Specs</a></li>
+        <li><a href="#telemetry" onclick="closeDrawer()">Telemetry HUD</a></li>
+        <li><a href="#calculator" onclick="closeDrawer()">Savings Calculator</a></li>
+        <li><a href="#about" onclick="closeDrawer()">About Airbots</a></li>
+        <li><a href="#contact" onclick="closeDrawer()">Contact & Dealership</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-primary w-100" onclick="closeDrawer(); openModal('demo');">Book Flight Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="brand-pill">
+          <span class="pill-dot"></span>
+          <span>Next-Generation Agri-Robotics</span>
+          <span class="pill-sep">•</span>
+          <span class="pill-accent">DGCA Certified</span>
+        </div>
+
+        <h1 class="hero-title">
+          Autonomous Drone Robotics For <span class="text-gradient-blue">Modern Farming</span> & <span class="text-gradient-green">Maximum Yield</span>
+        </h1>
+
+        <p class="hero-description">
+          Engineered and manufactured in India, <strong>AIRBOTS Aerospace</strong> integrates precision aerial robotics, millimeter-accurate spraying, and AI telemetry to safeguard crops, slash chemical costs by 30%, and save 90% water.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" onclick="openModal('demo')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Request Live Field Demo</span>
+          </button>
+          <a href="#specs" class="btn btn-secondary btn-lg">
+            <span>Explore Surya Shakti 15L</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero-trust-row">
+          <div class="trust-badge-item">
+            <div class="trust-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D8D49" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="trust-label">DGCA Certified</div>
+              <div class="trust-sub">Govt. Type Approved</div>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="trust-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4156AF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <div class="trust-label">Make in India</div>
+              <div class="trust-sub">Indigenous Architecture</div>
+            </div>
+          </div>
+          <div class="trust-badge-item">
+            <div class="trust-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D8D49" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <div class="trust-label">Subsidy Eligible</div>
+              <div class="trust-sub">SMAM / Agri Infra Fund</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="drone-card-glass">
+          <div class="drone-image-wrapper">
+            <img src="airbot_loader.jpeg" alt="Surya Shakti 15L DGCA Type Certified Drone" class="hero-drone-img" />
+            <div class="drone-tag-floating">
+              <span class="pulse-indicator"></span> Live Telemetry Active
+            </div>
+          </div>
+
+          <!-- Quick Telemetry HUD Ribbon -->
+          <div class="hero-metrics-grid">
+            <div class="metric-card">
+              <div class="metric-val text-blue">15 Liters</div>
+              <div class="metric-title">Smart Tank Payload</div>
+              <div class="metric-detail">High-pressure anti-clog</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val text-green">23+ Min</div>
+              <div class="metric-title">Flight Endurance</div>
+              <div class="metric-detail">Intelligent battery BMS</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val text-blue">3 Acres</div>
+              <div class="metric-title">Per Single Charge</div>
+              <div class="metric-detail">Rapid field cycle</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val text-green">5G Cloud</div>
+              <div class="metric-title">NEXTUAV GCS</div>
+              <div class="metric-detail">Remote Fleet Telemetry</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Value Props Banner -->
+  <section class="metrics-banner">
+    <div class="container">
+      <div class="metrics-strip">
+        <div class="strip-item">
+          <div class="strip-num">50,000+</div>
+          <div class="strip-text">Acres Sprayed Autonomously</div>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-item">
+          <div class="strip-num">30%</div>
+          <div class="strip-text">Pesticide Cost Reduction</div>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-item">
+          <div class="strip-num">90%</div>
+          <div class="strip-text">Water Conservation Ratio</div>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-item">
+          <div class="strip-num">10x</div>
+          <div class="strip-text">Faster Than Manual Spraying</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Product: Surya Shakti 15L Section -->
+  <section class="section-product" id="drone">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-sub">FLAGSHIP ROBOTIC PLATFORM</div>
+        <h2 class="section-title">Meet Surya Shakti 15L</h2>
+        <p class="section-desc">
+          Engineered ground-up for Indian agricultural terrain. High-efficiency foldable carbon-fiber airframe, centrifugal atomization nozzles, and automated fail-safe return to launch.
+        </p>
+      </div>
+
+      <div class="product-interactive-layout">
+        <div class="product-tabs-nav" role="tablist">
+          <button class="ptab-btn active" onclick="switchProductTab('spraying')">
+            <span class="ptab-icon">💧</span>
+            <span>Centrifugal Spray System</span>
+          </button>
+          <button class="ptab-btn" onclick="switchProductTab('airframe')">
+            <span class="ptab-icon">✈️</span>
+            <span>Foldable Carbon Airframe</span>
+          </button>
+          <button class="ptab-btn" onclick="switchProductTab('avionics')">
+            <span class="ptab-icon">🧠</span>
+            <span>Avionics & 5G Companion</span>
+          </button>
+          <button class="ptab-btn" onclick="switchProductTab('safety')">
+            <span class="ptab-icon">🛡️</span>
+            <span>Terrain Radar & Obstacle Avoidance</span>
+          </button>
+        </div>
+
+        <div class="product-display-panel">
+          <div class="ptab-content active" id="tab-spraying">
+            <div class="ptab-grid">
+              <div class="ptab-text">
+                <span class="tag-accent">Precision Spray Architecture</span>
+                <h3>Centrifugal Ultra-Fine Micron Atomization</h3>
+                <p>
+                  Eliminates nozzle clogging while providing adjustable droplet spectrum (60 to 200 microns). The twin high-pressure brushless magnetic pumps deliver uniform under-canopy penetration, ensuring pests hiding beneath leaves are reached without oversaturating the soil.
+                </p>
+                <ul class="feature-bullets">
+                  <li><strong>Flow Rate Control:</strong> Dynamic flow synchronization matched to ground speed (up to 4.5 L/min).</li>
+                  <li><strong>Swath Width:</strong> Optimized 4.5 – 6.5 meter effective spray swath.</li>
+                  <li><strong>Anti-Drift Technology:</strong> Downward rotor prop-wash guides mist directly into the crop canopy.</li>
+                </ul>
+              </div>
+              <div class="ptab-card-stats">
+                <div class="stat-box">
+                  <div class="sb-val">15 L</div>
+                  <div class="sb-lbl">Quick-Swap Tank</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">4.5 L/m</div>
+                  <div class="sb-lbl">Max Spray Rate</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">6.5 m</div>
+                  <div class="sb-lbl">Effective Swath</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">90%</div>
+                  <div class="sb-lbl">Water Conservation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ptab-content" id="tab-airframe">
+            <div class="ptab-grid">
+              <div class="ptab-text">
+                <span class="tag-accent">Aviation-Grade Engineering</span>
+                <h3>High-Tensile Carbon Fiber & Aluminum Alloy</h3>
+                <p>
+                  Built to withstand rugged field conditions and harsh weather. Features a quick-release cross-folding arm mechanism that shrinks the drone's footprint by 65%, allowing a single operator to transport it on standard farm vehicles or two-wheelers.
+                </p>
+                <ul class="feature-bullets">
+                  <li><strong>IP54 Ingress Protection:</strong> Resistant to dust, high moisture, and corrosive chemical washdowns.</li>
+                  <li><strong>Quick Fold System:</strong> Under 60 seconds from transport mode to fully operational flight readiness.</li>
+                  <li><strong>Vibration Damping:</strong> Aerospace-grade silicone mountings isolating high-frequency propulsion vibrations.</li>
+                </ul>
+              </div>
+              <div class="ptab-card-stats">
+                <div class="stat-box">
+                  <div class="sb-val">65%</div>
+                  <div class="sb-lbl">Volume Reduction Folded</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">IP54</div>
+                  <div class="sb-lbl">Weather Resistance</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">&lt; 60s</div>
+                  <div class="sb-lbl">Deployment Time</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">T-Motor</div>
+                  <div class="sb-lbl">High-Torque Powertrain</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ptab-content" id="tab-avionics">
+            <div class="ptab-grid">
+              <div class="ptab-text">
+                <span class="tag-accent">Autonomous Intelligence</span>
+                <h3>NEXTUAV 5G Companion Computer & Autopilot</h3>
+                <p>
+                  Powered by an on-board companion compute platform with dual GNSS RTK compatibility for centimeter-level flight paths. Operates autonomous waypoint routes, automatic resume after battery replacement, and real-time cloud data sync.
+                </p>
+                <ul class="feature-bullets">
+                  <li><strong>Centimeter Accuracy:</strong> RTK dual-antenna positioning prevents overlap and missed strips.</li>
+                  <li><strong>Regional GCS UI:</strong> Ground station software available in Hindi, Marathi, Telugu, Tamil, and English.</li>
+                  <li><strong>Blackbox Flight Recorder:</strong> Full telemetry logging for safety compliance and maintenance alerts.</li>
+                </ul>
+              </div>
+              <div class="ptab-card-stats">
+                <div class="stat-box">
+                  <div class="sb-val">5G RTK</div>
+                  <div class="sb-lbl">Centimeter Precision</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">5+ Lang</div>
+                  <div class="sb-lbl">Regional GCS UI</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">Auto</div>
+                  <div class="sb-lbl">Breakpoint Resume</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">Live</div>
+                  <div class="sb-lbl">Telemetry Cloud Sync</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ptab-content" id="tab-safety">
+            <div class="ptab-grid">
+              <div class="ptab-text">
+                <span class="tag-accent">Fail-Safe Protection</span>
+                <h3>Millimeter-Wave Radar & Geofence Matrix</h3>
+                <p>
+                  Dual forward-looking and terrain-following mmWave radar sensors scan the terrain up to 30 meters ahead. The drone automatically contours across hilly terraces and avoids power lines, tree branches, and field obstacles seamlessly.
+                </p>
+                <ul class="feature-bullets">
+                  <li><strong>Terrain Following:</strong> Maintains constant altitude above undulating crop canopies automatically.</li>
+                  <li><strong>Autonomous Return to Launch (RTL):</strong> Triggered on low battery, signal loss, or liquid empty.</li>
+                  <li><strong>Virtual Geofencing:</strong> Strict flight boundary enforcement complying with DGCA green-zone regulations.</li>
+                </ul>
+              </div>
+              <div class="ptab-card-stats">
+                <div class="stat-box">
+                  <div class="sb-val">30 m</div>
+                  <div class="sb-lbl">Radar Sensing Range</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">0.1 m</div>
+                  <div class="sb-lbl">Terrain Contour Res</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">Triple</div>
+                  <div class="sb-lbl">Redundant IMU/Compass</div>
+                </div>
+                <div class="stat-box">
+                  <div class="sb-val">Auto RTL</div>
+                  <div class="sb-lbl">Signal Loss Failsafe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Agri-Tech Solutions Grid -->
+  <section class="section-solutions" id="solutions">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-sub">COMPREHENSIVE AGRICULTURAL ECOSYSTEM</div>
+        <h2 class="section-title">Solutions Tailored for Indian Farms</h2>
+        <p class="section-desc">
+          From smallholder farms to commercial plantations and Farmer Producer Organizations (FPOs), AIRBOTS delivers turnkey drone solutions that modernize rural cultivation.
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="sol-icon-box bg-blue-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4156AF" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3>Precision Crop Spraying</h3>
+          <p>
+            Eliminate health hazards of manual backpack sprayers. Micro-droplet atomization deposits liquid uniformly on both foliage sides, maximizing bio-efficacy and cutting pesticide runoff.
+          </p>
+          <ul class="sol-list">
+            <li>Paddy, Sugarcane, Cotton & Wheat</li>
+            <li>High-canopy orchards & horticulture</li>
+            <li>30% chemical reduction guaranteed</li>
+          </ul>
+        </div>
+
+        <div class="solution-card featured-sol-card">
+          <div class="badge-featured">Most Popular</div>
+          <div class="sol-icon-box bg-green-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D8D49" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Drone-as-a-Service (DaaS)</h3>
+          <p>
+            No upfront capital purchase required. Hire certified drone pilots and machines on demand for per-acre spraying cycles through our nationwide network of partner hubs.
+          </p>
+          <ul class="sol-list">
+            <li>On-demand booking per acre</li>
+            <li>Experienced DGCA certified pilots</li>
+            <li>Complete spraying & telemetry report</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="sol-icon-box bg-blue-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4156AF" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>DGCA Pilot Training & Academies</h3>
+          <p>
+            Empowering rural youth and agri-graduates with certified remote pilot licenses (RPC), opening lucrative entrepreneurial careers in agri-aviation across India.
+          </p>
+          <ul class="sol-list">
+            <li>DGCA certified curriculum</li>
+            <li>Simulator & field flight training</li>
+            <li>Direct placement in DaaS networks</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="sol-icon-box bg-green-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D8D49" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          </div>
+          <h3>Multispectral Crop Scouting</h3>
+          <p>
+            Identify pest infestations, nitrogen deficiency, and water stress before symptoms become visible to the naked eye using high-resolution NDVI sensor maps.
+          </p>
+          <ul class="sol-list">
+            <li>NDVI & NDRE health indexes</li>
+            <li>Prescription spray mapping</li>
+            <li>Early pest & fungal detection</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="sol-icon-box bg-blue-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4156AF" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>NEXTUAV Fleet Management</h3>
+          <p>
+            Enterprise cloud dashboard for FPOs, contract farming companies, and agri-corporates to monitor multi-drone fleet telemetry, flight hours, and operator logs.
+          </p>
+          <ul class="sol-list">
+            <li>Live GPS & mission tracking</li>
+            <li>Battery lifecycle management</li>
+            <li>Automated billing & work logs</li>
+          </ul>
+        </div>
+
+        <div class="solution-card">
+          <div class="sol-icon-box bg-green-tint">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D8D49" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Government Subsidy & Financing</h3>
+          <p>
+            Turnkey documentation support to avail 40% – 50% central and state subsidies under the Sub-Mission on Agricultural Mechanization (SMAM) and low-interest AIF loans.
+          </p>
+          <ul class="sol-list">
+            <li>Direct SMAM subsidy paperwork</li>
+            <li>Tie-ups with leading agri banks</li>
+            <li>Comprehensive insurance coverage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications Matrix -->
+  <section class="section-specs" id="specs">
+    <div class="container">
+      <div class="specs-header-row">
+        <div>
+          <div class="section-sub">ENGINEERING SPECIFICATIONS</div>
+          <h2 class="section-title">Surya Shakti 15L Tech Matrix</h2>
+        </div>
+        <div class="specs-actions">
+          <button class="btn btn-outline" onclick="openModal('brochure')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span>Download Full Datasheet</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="specs-table-container">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Surya Shakti 15L Standard</th>
+              <th>Surya Shakti 15L Pro (RTK)</th>
+              <th>Industry Standard Drone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tank Capacity</strong></td>
+              <td><span class="badge-spec">15 Liters</span></td>
+              <td><span class="badge-spec spec-pro">15 Liters (Smart Level)</span></td>
+              <td>10 – 12 Liters</td>
+            </tr>
+            <tr>
+              <td><strong>DGCA Type Certification</strong></td>
+              <td><span class="badge-green">Certified</span></td>
+              <td><span class="badge-green">Certified</span></td>
+              <td>Pending / Not Certified</td>
+            </tr>
+            <tr>
+              <td><strong>Flight Endurance (Full Load)</strong></td>
+              <td>23+ Minutes</td>
+              <td>25+ Minutes</td>
+              <td>12 – 15 Minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Coverage Rate</strong></td>
+              <td>3.0 – 3.5 Acres / Charge</td>
+              <td>3.5 – 4.0 Acres / Charge</td>
+              <td>1.5 – 2.0 Acres / Charge</td>
+            </tr>
+            <tr>
+              <td><strong>Nozzle Type</strong></td>
+              <td>High-Pressure Centrifugal (x4)</td>
+              <td>Dual-Centrifugal Brushless (x4)</td>
+              <td>Standard TeeJet Ceramic</td>
+            </tr>
+            <tr>
+              <td><strong>Obstacle Avoidance</strong></td>
+              <td>Forward Radar (20m)</td>
+              <td>Omni-directional mmWave (30m)</td>
+              <td>Single Ultrasonic Sensor</td>
+            </tr>
+            <tr>
+              <td><strong>Positioning Precision</strong></td>
+              <td>Dual GNSS (GPS + Glonass + NavIC)</td>
+              <td>RTK Dual Antenna (±2 cm)</td>
+              <td>Single Band GPS (±1.5 m)</td>
+            </tr>
+            <tr>
+              <td><strong>Airframe Weight (Empty)</strong></td>
+              <td>12.8 kg</td>
+              <td>13.2 kg</td>
+              <td>15.5 kg</td>
+            </tr>
+            <tr>
+              <td><strong>Max Takeoff Weight (MTOW)</strong></td>
+              <td>31.5 kg</td>
+              <td>32.0 kg</td>
+              <td>34.0 kg</td>
+            </tr>
+            <tr>
+              <td><strong>Regional GCS Support</strong></td>
+              <td>Hindi, Marathi, English</td>
+              <td>5+ Indian Languages</td>
+              <td>English Only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Telemetry / Flight HUD Simulator -->
+  <section class="section-telemetry" id="telemetry">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-sub">MISSION CONTROL SIMULATOR</div>
+        <h2 class="section-title">Experience the NEXTUAV Cockpit</h2>
+        <p class="section-desc">
+          Test the real-time flight telemetry interface used by thousands of certified pilots in field operations. Click flight modes to see live avionics react.
+        </p>
+      </div>
+
+      <div class="hud-simulator-card">
+        <!-- HUD Header Bar -->
+        <div class="hud-top-bar">
+          <div class="hud-drone-status">
+            <span class="hud-indicator active"></span>
+            <span class="hud-text-bold">SURYA-SHAKTI-ALPHA-09</span>
+            <span class="hud-tag">ONLINE (5G LTE)</span>
+          </div>
+
+          <div class="hud-flight-modes">
+            <button class="mode-btn active" onclick="setFlightMode('auto')">Auto Waypoint</button>
+            <button class="mode-btn" onclick="setFlightMode('hover')">Terrace Hold</button>
+            <button class="mode-btn" onclick="setFlightMode('spray')">Active Spray</button>
+            <button class="mode-btn btn-rtl" onclick="setFlightMode('rtl')">RTL Failsafe</button>
+          </div>
+        </div>
+
+        <!-- HUD Gauges Grid -->
+        <div class="hud-gauges-grid">
+          <div class="gauge-card">
+            <div class="gauge-label">FLIGHT ALTITUDE</div>
+            <div class="gauge-value" id="hudAlt">3.2 <span class="unit">m AGL</span></div>
+            <div class="gauge-bar-bg"><div class="gauge-bar-fill" id="altBar" style="width: 45%;"></div></div>
+            <div class="gauge-sub">Terrain Contour: Lock Active</div>
+          </div>
+
+          <div class="gauge-card">
+            <div class="gauge-label">GROUND SPEED</div>
+            <div class="gauge-value" id="hudSpeed">4.5 <span class="unit">m/s</span></div>
+            <div class="gauge-bar-bg"><div class="gauge-bar-fill" id="speedBar" style="width: 55%;"></div></div>
+            <div class="gauge-sub">Wind: 2.1 m/s (Light Breeze)</div>
+          </div>
+
+          <div class="gauge-card">
+            <div class="gauge-label">SMART TANK LEVEL</div>
+            <div class="gauge-value" id="hudTank">11.8 <span class="unit">/ 15 L</span></div>
+            <div class="gauge-bar-bg"><div class="gauge-bar-fill" id="tankBar" style="width: 78%; background-color: var(--primary-green);"></div></div>
+            <div class="gauge-sub">Flow: <span id="hudFlow">3.2 L/min</span></div>
+          </div>
+
+          <div class="gauge-card">
+            <div class="gauge-label">BATTERY CAPACITY</div>
+            <div class="gauge-value text-green" id="hudBattery">84 <span class="unit">% (22.2V)</span></div>
+            <div class="gauge-bar-bg"><div class="gauge-bar-fill" id="batteryBar" style="width: 84%; background-color: var(--primary-green);"></div></div>
+            <div class="gauge-sub">Estimated Left: 18m 42s</div>
+          </div>
+        </div>
+
+        <!-- HUD Radar & Satellite Map Mock -->
+        <div class="hud-map-canvas">
+          <div class="hud-canvas-overlay">
+            <div class="hud-crosshair"></div>
+            <div class="hud-drone-blip" id="droneBlip">
+              <div class="blip-ripple"></div>
+              <div class="blip-drone-icon">✈</div>
+            </div>
+            <div class="hud-field-polygon">
+              <svg width="100%" height="100%" viewBox="0 0 600 240">
+                <polygon points="120,40 480,30 540,190 80,180" fill="rgba(29, 141, 73, 0.15)" stroke="#1D8D49" stroke-width="2" stroke-dasharray="5 5" />
+                <polyline points="140,60 460,50 470,80 150,90 160,120 480,110 490,140 170,150" fill="none" stroke="#4156AF" stroke-width="2" />
+                <circle cx="140" cy="60" r="4" fill="#4156AF" />
+                <circle cx="170" cy="150" r="4" fill="#1D8D49" />
+              </svg>
+            </div>
+            <div class="hud-map-badge">Waypoint Track: WP-14 / 28 | Acreage Complete: 2.1 / 3.4 Acres</div>
+          </div>
+        </div>
+
+        <!-- HUD Footer Telemetry Status -->
+        <div class="hud-footer">
+          <div class="telemetry-item">
+            <span class="t-icon">🛰</span>
+            <span>NavIC + GPS: <strong>24 Satellites (Fixed RTK)</strong></span>
+          </div>
+          <div class="telemetry-item">
+            <span class="t-icon">📡</span>
+            <span>Radar Obstacle: <strong>Clear (Next obstacle 42m)</strong></span>
+          </div>
+          <div class="telemetry-item">
+            <span class="t-icon">🌡</span>
+            <span>Motor Temp: <strong>41°C (Nominal)</strong></span>
+          </div>
+          <div class="telemetry-item">
+            <button class="btn btn-sm btn-outline" onclick="triggerSimulatorTick()">Simulate Flow Pulse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Agricultural ROI & Savings Calculator -->
+  <section class="section-calculator" id="calculator">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-sub">ECONOMIC IMPACT ESTIMATOR</div>
+        <h2 class="section-title">Calculate Your Farm's Annual Savings</h2>
+        <p class="section-desc">
+          Compare the economics of traditional manual labor spraying against autonomous AIRBOTS drone technology. See instant chemical, water, labor, and yield savings.
+        </p>
+      </div>
+
+      <div class="calc-card-container">
+        <!-- Controls Column -->
+        <div class="calc-controls">
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="farmSize">Total Cultivation Area:</label>
+              <span class="calc-val-display" id="farmSizeVal">25 Acres</span>
+            </div>
+            <input type="range" id="farmSize" min="2" max="150" value="25" class="calc-slider" oninput="updateCalculator()" />
+            <div class="slider-ticks">
+              <span>2 Acres</span>
+              <span>50 Acres</span>
+              <span>100 Acres</span>
+              <span>150 Acres</span>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label for="cropType">Select Primary Crop Type:</label>
+            <select id="cropType" class="calc-select" onchange="updateCalculator()">
+              <option value="cotton">Cotton / BT Cotton (High Spray Frequency)</option>
+              <option value="paddy" selected>Paddy / Rice (Heavy Water Need)</option>
+              <option value="sugarcane">Sugarcane (Tall Canopy Difficulty)</option>
+              <option value="wheat">Wheat / Cereals</option>
+              <option value="horticulture">Chili / Vegetables / Fruit Orchards</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="sprayCycles">Spraying Cycles Per Year:</label>
+              <span class="calc-val-display" id="cyclesVal">6 Sprays</span>
+            </div>
+            <input type="range" id="sprayCycles" min="2" max="14" value="6" class="calc-slider" oninput="updateCalculator()" />
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="manualCost">Current Manual Labor Cost (₹ / Acre):</label>
+              <span class="calc-val-display" id="laborCostVal">₹ 600</span>
+            </div>
+            <input type="range" id="manualCost" min="300" max="1200" step="50" value="600" class="calc-slider" oninput="updateCalculator()" />
+          </div>
+
+          <div class="calc-note">
+            💡 <em>Calculations based on ICAR field trial benchmarks and AIRBOTS field deployment metrics.</em>
+          </div>
+        </div>
+
+        <!-- Live Output Column -->
+        <div class="calc-results">
+          <div class="results-header">
+            <h4>Estimated Annual Farm Impact</h4>
+            <span class="badge-roi">350% 3-Year ROI</span>
+          </div>
+
+          <div class="savings-highlight-card">
+            <div class="sh-label">NET ANNUAL SAVINGS</div>
+            <div class="sh-amount" id="totalSavings">₹ 1,12,500</div>
+            <div class="sh-sub">Direct money saved on chemicals, labor & water wastage</div>
+          </div>
+
+          <div class="results-breakdown-grid">
+            <div class="res-item">
+              <div class="res-icon">🧪</div>
+              <div class="res-info">
+                <div class="res-title">Chemical Pesticide Saved</div>
+                <div class="res-val" id="chemSaved">₹ 45,000 (30% less)</div>
+              </div>
+            </div>
+
+            <div class="res-item">
+              <div class="res-icon">💧</div>
+              <div class="res-info">
+                <div class="res-title">Water Conserved</div>
+                <div class="res-val" id="waterSaved">27,000 Liters (90%)</div>
+              </div>
+            </div>
+
+            <div class="res-item">
+              <div class="res-icon">⏱️</div>
+              <div class="res-info">
+                <div class="res-title">Labor Time Saved</div>
+                <div class="res-val" id="timeSaved">180 Hours</div>
+              </div>
+            </div>
+
+            <div class="res-item">
+              <div class="res-icon">🌾</div>
+              <div class="res-info">
+                <div class="res-title">Projected Yield Boost</div>
+                <div class="res-val" id="yieldBoost">+8% to +12%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-cta-row">
+            <button class="btn btn-primary w-100" onclick="openModal('quote')">Get Customized Farm Proposal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Mission Section -->
+  <section class="section-about" id="about">
+    <div class="container about-grid">
+      <div class="about-image-col">
+        <div class="about-card-wrapper">
+          <div class="about-emblem-container">
+            <img src="airbot_wp.jpg" alt="AIRBOTS Aerospace Emblem" class="about-emblem-img" />
+          </div>
+          <div class="about-floating-card">
+            <div class="afc-num">95%</div>
+            <div class="afc-text">Indigenously Sourced Components (Make in India)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <div class="section-sub">OUR MISSION & HERITAGE</div>
+        <h2 class="section-title">Innovating Aerospace For India's Food Sovereignty</h2>
+        <p class="about-lead">
+          Headquartered in Mumbai, Maharashtra, <strong>Airbots Aerospace Pvt. Ltd.</strong> was founded with a singular conviction: to empower Indian farmers with world-class, rugged, and accessible robotics.
+        </p>
+        <p class="about-body">
+          Traditional farming faces shrinking rural labor, critical chemical exposure risks, and unpredictable climate patterns. By pioneering DGCA Type-Certified drones that require zero imported foreign dependencies, we are creating a resilient agri-tech backbone for our nation.
+        </p>
+
+        <div class="about-pillars-grid">
+          <div class="pillar-box">
+            <div class="pillar-num">01</div>
+            <h4>Farmer-Centric Simplicity</h4>
+            <p>One-touch flight planning in local mother tongues with rugged fail-safes.</p>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-num">02</div>
+            <h4>Aviation Rigor</h4>
+            <p>Stringent DGCA safety certification, dual redundant IMUs, and flight data logging.</p>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-num">03</div>
+            <h4>Sustainable Future</h4>
+            <p>Drastically reducing chemical runoff into groundwater and safeguarding soil microbiology.</p>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-num">04</div>
+            <h4>Rural Employment</h4>
+            <p>Creating thousands of certified agri-drone entrepreneurs and service pilots across villages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dealership & Contact Section -->
+  <section class="section-contact" id="contact">
+    <div class="container">
+      <div class="contact-card-glass">
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <div class="section-sub" style="color: #A5B4FC;">CONNECT WITH AIRBOTS</div>
+            <h2>Let's Transform Your Agricultural Operations</h2>
+            <p>
+              Whether you are an individual farmer seeking a drone demonstration, an FPO looking for fleet procurement, or an entrepreneur interested in becoming an authorized district dealer:
+            </p>
+
+            <div class="contact-items">
+              <div class="c-item">
+                <div class="c-icon">📍</div>
+                <div>
+                  <div class="c-label">Headquarters</div>
+                  <div class="c-val">Airbots Aerospace Pvt. Ltd.<br/>Mumbai, Maharashtra, India</div>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon">📞</div>
+                <div>
+                  <div class="c-label">Direct Hotline</div>
+                  <div class="c-val"><a href="tel:+918097507260">+91 8097507260</a></div>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon">✉️</div>
+                <div>
+                  <div class="c-label">Email Communications</div>
+                  <div class="c-val"><a href="mailto:info@airbotsaerospace.com">info@airbotsaerospace.com</a></div>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <div class="c-icon">🕒</div>
+                <div>
+                  <div class="c-label">Operating Hours</div>
+                  <div class="c-val">Mon - Sat: 9:00 AM - 7:00 PM IST</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel">
+            <h3>Schedule a Demonstration / Inquiry</h3>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cName">Full Name *</label>
+                  <input type="text" id="cName" class="form-input" placeholder="e.g. Ramesh Patel" required />
+                </div>
+                <div class="form-group">
+                  <label for="cPhone">Mobile Number (WhatsApp) *</label>
+                  <input type="tel" id="cPhone" class="form-input" placeholder="+91 98765 43210" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cState">State / Region *</label>
+                  <select id="cState" class="form-input" required>
+                    <option value="">Select State</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="AP">Andhra Pradesh / Telangana</option>
+                    <option value="PB">Punjab / Haryana</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="OTHER">Other State / Union Territory</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cType">I am inquiring as:</label>
+                  <select id="cType" class="form-input">
+                    <option value="farmer">Progressive Farmer</option>
+                    <option value="dealer">Dealership / Franchisee Applicant</option>
+                    <option value="fpo">FPO / Cooperative Society</option>
+                    <option value="pilot">Drone Pilot Training Aspirant</option>
+                    <option value="corporate">Agri-Business Enterprise</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cMessage">Message / Farm Details (Crop & Acreage)</label>
+                <textarea id="cMessage" rows="3" class="form-input" placeholder="Tell us about your requirements, farm acreage, or query..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                Submit Inquiry & Request Callback
+              </button>
+            </form>
+            <div id="formFeedback" class="form-feedback hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top-row">
+      <div class="footer-col-brand">
+        <!-- Exact white logo on dark background -->
+        <a href="#" class="footer-logo-link">
+          <img src="airbot_logofoot.webp" alt="AIRBOTS AEROSPACE Logo (White)" class="footer-logo-img" />
+        </a>
+        <p class="footer-tagline">
+          Empowering Indian farmers through DGCA-certified autonomous drone robotics, intelligent precision spraying, and sustainable harvest stewardship.
+        </p>
+        <div class="footer-social-row">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <div class="footer-heading">Drones & Products</div>
+        <ul class="footer-nav">
+          <li><a href="#drone">Surya Shakti 15L</a></li>
+          <li><a href="#specs">Centrifugal Spray System</a></li>
+          <li><a href="#specs">Dual mmWave Radar</a></li>
+          <li><a href="#telemetry">NEXTUAV GCS Software</a></li>
+          <li><a href="#specs">Lithium Smart Battery BMS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <div class="footer-heading">Agricultural Solutions</div>
+        <ul class="footer-nav">
+          <li><a href="#solutions">Precision Pesticide Spraying</a></li>
+          <li><a href="#solutions">Drone-as-a-Service (DaaS)</a></li>
+          <li><a href="#solutions">Multispectral Crop Scouting</a></li>
+          <li><a href="#solutions">DGCA Certified Pilot Academy</a></li>
+          <li><a href="#calculator">Government Subsidy Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <div class="footer-heading">Company & Legal</div>
+        <ul class="footer-nav">
+          <li><a href="#about">About Airbots</a></li>
+          <li><a href="#about">Make in India Mission</a></li>
+          <li><a href="#contact">Dealership Inquiries</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 Airbots Aerospace Pvt. Ltd. All Rights Reserved. Mumbai, Maharashtra, India.
+        </div>
+        <div class="footer-credit">
+          Designed with original brand colors (<span style="color:#60A5FA;">#4156AF</span> Royal Blue &amp; <span style="color:#4ADE80;">#1D8D49</span> Forest Green) &amp; Official Logos.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog for Demos & Inquiries -->
+  <div class="modal-overlay" id="genericModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
